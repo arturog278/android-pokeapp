@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        tools:text="Pokemon name"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/happiness_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/happiness"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_tv" />
+
+    <TextView
+        android:id="@+id/happiness_tv_editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:padding="16dp"
+        tools:text="50"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/happiness_tv"
+        app:layout_constraintBottom_toBottomOf="@id/happiness_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/happiness_tv" />
+
+    <TextView
+        android:id="@+id/capture_rate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/rate"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/happiness_tv"
+        app:layout_constraintTop_toBottomOf="@id/happiness_tv" />
+
+    <TextView
+        android:id="@+id/capture_rate_tv_editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        tools:text="40"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/capture_rate_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/capture_rate_tv"
+        app:layout_constraintTop_toTopOf="@id/capture_rate_tv" />
+
+    <TextView
+        android:id="@+id/color_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/color"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/capture_rate_tv"
+        app:layout_constraintTop_toBottomOf="@id/capture_rate_tv" />
+
+    <TextView
+        android:id="@+id/color_tv_editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        tools:text="Red"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/color_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/color_tv"
+        app:layout_constraintTop_toTopOf="@id/color_tv" />
+
+    <TextView
+        android:id="@+id/egg_groups_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/egg_groups"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/color_tv"
+        app:layout_constraintTop_toBottomOf="@id/color_tv" />
+
+    <TextView
+        android:id="@+id/egg_groups_tv_editable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        tools:text="Monster, dragon"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/egg_groups_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/egg_groups_tv"
+        app:layout_constraintTop_toTopOf="@id/egg_groups_tv" />
+
+    <Button
+        android:id="@+id/evolution_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evolution_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/abilities_btn"
+        app:layout_constraintTop_toBottomOf="@id/egg_groups_tv" />
+
+    <Button
+        android:id="@+id/abilities_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/abilities_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/evolution_btn"
+        app:layout_constraintEnd_toEndOf="@id/evolution_btn"
+        app:layout_constraintStart_toStartOf="@id/evolution_btn"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

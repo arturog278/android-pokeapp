@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Poke App</string>
+    <string name="poke_list_tittle">Kanto\'s Pokemon list</string>
+    <string name="happiness">Felicidad base: </string>
+    <string name="rate">Tasa de captura: </string>
+    <string name="color">Color: </string>
+    <string name="egg_groups">Grupos de huevos: </string>
+    <string name="evolution_button">Linea evolutiva</string>
+    <string name="abilities_button">Habilidades</string>
 </resources>
